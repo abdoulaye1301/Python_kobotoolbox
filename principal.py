@@ -11,7 +11,7 @@ dasboaord = st.Page(
 )
 accueil = st.Page(
     page="accueil.py",
-    title="Accueil",
+    title="Données",
     icon="",
 )
 connexion = st.Page(
@@ -20,7 +20,7 @@ connexion = st.Page(
     icon="",
 )
 # Navigation des pages
-pg = st.navigation([accueil, dasboaord])
+pg = st.navigation({"Accueil": [accueil], "Tableau de bord": [dasboaord]})
 
 dire = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 fichier_css = "styl/style.css"

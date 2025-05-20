@@ -42,6 +42,7 @@ def baseDonnee():
                 "_tags",
                 "_index",
                 "_id",
+                "Filière spécialisé",
             ],
             inplace=True,
         )
